@@ -1,15 +1,15 @@
 #Python libraries that we need to import for our bot
 import random
+import os
 from flask import Flask, request
 from pymessenger.bot import Bot
 from dotenv import load_dotenv
-import os
+
 load_dotenv()
 
-
 app = Flask(__name__)
-ACCESS_TOKEN = os.getenv('ACCESS_TOKEN')
-VERIFY_TOKEN = os.getenv('VERIFY_TOKEN')
+ACCESS_TOKEN = os.getenv("ACCESS_TOKEN")
+VERIFY_TOKEN = os.getenv("VERIFY_TOKEN")
 bot = Bot(ACCESS_TOKEN)
 
 #We will receive messages that Facebook sends our bot at this endpoint 
