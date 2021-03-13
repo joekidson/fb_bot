@@ -4,8 +4,8 @@ init:
 freeze:
 	pip freeze > requirements.txt
 
-start_yes:
-	python start.py vote_yes
+ngrok:
+	ngrok http 5000
 
-start_undecided:
-	python start.py
+start:
+	python3 app.py

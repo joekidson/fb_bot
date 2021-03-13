@@ -1,0 +1,43 @@
+{
+  "going_to_vote": {
+    "1" : {
+      "bot_text": "Are you voting for Labour in the upcoming election?",
+      "valid_responses": ["yes", "no"],
+      "valid_res_explainer": "Please write yes or no",
+      "goto": {
+        "yes": ["going_to_vote", "2"],
+        "no": ["going_to_vote", "3"]
+      },
+      "to_write": "voting"
+    },
+    "2" : {
+        "bot_text": "Do you have a plan for voting day?",
+        "valid_responses": ["yes", "no"],
+        "valid_res_explainer": "Please write yes or no",
+        "goto": {
+          "yes": ["going_to_vote", "4"],
+          "no": ["going_to_vote", "4"]
+        },
+        "to_write": "plan_for_voting"
+    },
+    "3" : {
+      "bot_text": "Why arent you going to vote?",
+      "valid_responses": "",
+      "valid_res_explainer": "",
+      "goto": {
+        "yes": ["going_to_vote", "4"],
+        "no": ["going_to_vote", "4"]
+      },
+      "to_write": "why_no_vote"
+    },
+    "4" : {
+      "bot_text": "Thank you for your response",
+      "valid_responses": "",
+      "valid_res_explainer": "",
+      "goto": {
+        "yes": ["going_to_vote", "1"],
+        "no": ["going_to_vote", "1"]
+      }
+    }
+  }
+}

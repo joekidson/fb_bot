@@ -1,6 +1,8 @@
 # fb_bot
 Testing out a facebook bot
 
+Instructions for setting up the Facebook app can be found [here](https://www.twilio.com/blog/2017/12/facebook-messenger-bot-python.html)
+
 ## To start
 
 1. Run the installer
